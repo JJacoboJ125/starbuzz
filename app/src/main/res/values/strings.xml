@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">tiendaCafeAPP</string>
+    <string name="app_logo">tiendaCafeLOGO</string>
+    <string-array name="opciones">
+        <item>Bebidas</item>
+        <item>Alimentos</item>
+        <item>Tiendas</item>
+    </string-array>
+</resources>
