@@ -32,7 +32,7 @@ public class DrinkCategoryActivity extends AppCompatActivity {
             db = StarbuzzDataBaseHelper.getReadableDatabase();
             cursor = db.query("DRINK",
                     new String[]{"_id, NAME"}, null, null, null, null, null);
-            SimpleCursorAdapter listAdapter = new SimpleCursorAdapter(this,
+            SimpleCursorAdapter listAdapter = new SimpleCursorAdapter(DrinkCategoryActivity.this,
                     android.R.layout.simple_list_item_1,
                     cursor,
                     new String[]{"NAME"},

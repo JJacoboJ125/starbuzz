@@ -40,7 +40,7 @@ public class StarbuzzDataBaseHelper extends SQLiteOpenHelper {
             insertDrink(db,"filter", "cafe con la mejor seleccion de granos", R.drawable.filter);
         }
         if(oldVersion<2){
-            db.execSQL("ALTER TABLE DRINK ADD COLUMN FAVORITE NUMERIC");
+            //db.execSQL("ALTER TABLE DRINK ADD COLUMN FAVORITE NUMERIC;");
         }
 
     }
@@ -51,6 +51,7 @@ public class StarbuzzDataBaseHelper extends SQLiteOpenHelper {
         drinkValues.put("NAME",nombre);
         drinkValues.put("DESCRIPTION", descr);
         drinkValues.put("IMAGE_RESOURCE_ID INTEGER",source);
+        db.insert("DRINK",null,drinkValues);
 
     }
 }
